@@ -22,21 +22,21 @@ while not halt:
             break
         i += 1
 
-##### Part 1
-# range_index = 0
-# num_fresh = 0
+# Part 1
+range_index = 0
+num_fresh = 0
 
-# for ingredient in ingredient_ids:
-#     for start, end in fresh_ranges:
-#         if ingredient in range(start, end + 1):
-#             num_fresh += 1
-#             break
+for ingredient in ingredient_ids:
+    for start, end in fresh_ranges:
+        if ingredient in range(start, end + 1):
+            num_fresh += 1
+            break
 
-# print(num_fresh)
+print(f"Part 1 Answer: {num_fresh}")
 
-##### Part 2
-# num_fresh = 0
-# for start, end in fresh_ranges:
-#     num_fresh += end - start + 1
-    
-# print(num_fresh)
+# Part 2
+num_fresh = 0
+for start, end in fresh_ranges:
+    num_fresh += end - start + 1
+
+print(f"Part 2 Answer: {num_fresh}")
